@@ -1,0 +1,27 @@
+外网Windows → 外网Linux
+1. 将文件复制到Data文件夹内部
+2. 运行w-wx.bat，会将Data文件夹内部的所有文件复制到Linux电脑的/home/ocean/alex/Others/Linux-Windows/Data的文件夹中
+注解：w-wx表示外网-Windows传入Linux（w-外网、w-Windows、x-Linux）
+
+专网Linux → 专网Windows（可以通过putty完成）
+1. 在Linux电脑的/home/ocean/alex/Others/Linux-Windows文件夹打开一个终端
+2. 写入相应的代码，例如：bash z-xw.sh '*'，就是将当Data文件夹中所有文件复制到专网Windows电脑的F:/User/LocalUser/jhyang/Download/alex_network文件夹中
+注解：z-xw表示专网-Linux传入Windows（z-专网、w-Windows、x-Linux）
+
+专网自己电脑查看文件
+1. 文件所放的文件夹在Windows服务器所在的电脑已经共享了
+2. 在专网电脑运行中输入\\10.1.8.200\alex_network即可以查看相应的文件
+
+=====================================================================================================
+
+专网自己电脑查看文件复制到Windows服务器上
+1. 在专网电脑运行中输入\\10.1.8.200\alex_network即可以查看相应的文件，也可以将相应的文件复制进去
+
+专网Windows → 专网Linux（可以通过putty完成）
+1. 在Linux电脑的/home/ocean/alex/Others/Linux-Windows文件夹打开一个终端
+2. 写入相应的代码，例如：bash z-wx.sh '*'，就是将专网Windows电脑的F:/User/LocalUser/jhyang/Download/alex_network文件夹中所有文件复制到Linux电脑中/home/ocean/alex/Others/Linux-Windows/Data文件夹中
+注解：z-wx表示专网-Windows传入Linux（z-专网、w-Windows、x-Linux）
+
+外网Linux → 外网Windows
+1. 运行外网Windows电脑D:\Windows-Linux文件夹中的w-xw.bat，会将Linux电脑中/home/ocean/alex/Others/Linux-Windows/Data文件夹中的所有文件复制到Windows电脑的D:\Windows-Linux\Data的文件夹中
+注解：w-xw表示外网-Windows传入Linux（w-外网、w-Windows、x-Linux）
